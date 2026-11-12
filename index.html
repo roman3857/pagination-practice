@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <header class="header">
+    <div class="container">
+      <h1>News Search</h1>
+      <p>Find the latest news around the world</p>
+    </div>
+  </header>
+
+  <main class="container">
+
+    <!-- Search form -->
+    <form class="search-form js-search-form">
+      <input
+        type="text"
+        name="query"
+        placeholder="Enter keyword..."
+        autocomplete="off"
+        required
+      >
+
+      <button type="submit">Search</button>
+    </form>
+
+
+    <p class="message js-message"></p>
+
+   
+    <ul class="articles-container js-articles-container">
+    </ul>
+
+   
+    <div class="load-more-wrapper">
+      <button
+        type="button"
+        class="load-more"
+        data-action="load-more"
+      >
+        Load More
+      </button>
+
+      <div class="spinner is-hidden js-spinner"></div>
+    </div>
+
+  </main>
+  <script src="./script.js"></script>
+</body>
+</html>
